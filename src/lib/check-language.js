@@ -3,6 +3,7 @@
     comparing with languages.json file
 =====================================================*/
 const languages = require('./languages.json')
+const chalk = require('chalk');
 
 function checkLanguage(language) {
     language = language.toLowerCase();
@@ -13,26 +14,23 @@ function checkLanguage(language) {
             return language;
         } else {
             // show error
-            console.log('invalid code');
+            console.log(chalk.red('Error: Invalid language code'));
             process.exit(1);
         }
     } else {
         let code ='';
         for (let key of Object.keys(languages)) {
             let names = languages[key].map((item) => item.toLowerCase());
-            console.log(names)
             if( names.indexOf(language) !== -1) {
                 code = key;
-                console.log('breaking');
                 break;
             }
         }
         if (code !== '') {
-            console.log(code)
             return code;
         } else {
-            // show error code
-            console.log('Invalid language')
+            // show error
+            console.log(chalk.red('Error: Invalid language'));
             process.exit(1);
         }
     }
