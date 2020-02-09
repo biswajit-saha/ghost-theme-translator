@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const pkg = require('../package.json');
+const {create} = require('../index');
+
+program
+    .name(pkg.shortname)
+    .description(pkg.description)
+    .version(pkg.version)
+    .command('create')
+    .alias('c')
+    .description('create a translation file')
+    .option('-l, --language <language>', 'Language code or name default to English (en)', 'en')
+    .option('-d, --dir <dir>', 'Path to a Ghost theme root directory')
+    .option('-n, --theme-name <themeName>', 'Name of the theme folder, it is required and only takes effect when current directory is Ghost root.')
+    .action((options) => {
+        create(options);
+    });
+
+program.parse(process.argv);
+
+// If no command  show help
+if (process.argv.length === 2) {
+    program.help();
+}

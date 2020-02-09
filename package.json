@@ -1,0 +1,36 @@
+{
+  "name": "ghost-theme-translator",
+  "shortname": "gtt",
+  "version": "1.0.0",
+  "description": "CLI tool for automatically parse translatable strings in Ghost theme and generate language file.",
+  "main": "index.js",
+  "bin": {
+    "ghost-theme-translator": "bin/ghost-theme-translator",
+    "gtt": "bin/ghost-theme-translator"
+  },
+  "scripts": {
+    "postinstall": "node ./src/postinstall.js"
+  },
+  "keywords": [
+    "ghost-theme-translator",
+    "ghost",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biswajit-saha/ghost-theme-translator"
+  },
+  "bugs": {
+    "url": "https://github.com/biswajit-saha/ghost-theme-translator/issues"
+  },
+  "author": {
+    "name": "Biswajit Saha"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "cli-cursor": "^3.1.0",
+    "commander": "^4.1.0",
+    "recursive-readdir-async": "^1.1.6"
+  }
+}
