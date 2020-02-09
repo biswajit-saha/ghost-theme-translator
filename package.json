@@ -1,7 +1,7 @@
 {
   "name": "ghost-theme-translator",
   "shortname": "gtt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for automatically parse translatable strings in Ghost theme and generate language file.",
   "main": "index.js",
   "bin": {
