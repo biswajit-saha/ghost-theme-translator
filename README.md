@@ -48,7 +48,6 @@ But for easy uses `gtt [options] <command>` is also available and convenient to 
 | Options                                 | Description                                                  |
 | --------------------------------------- | :----------------------------------------------------------- |
 | `-l ` , <br>`--language` <language>     | Language code or name default to English (en). <br/>No need to pass this option if you want to generate en.json file.<br/>Pass any valid language code or name otherwise.<br/>**Example:** `--language=french` or `-l french` |
-|                                         |                                                              |
 | `-d`,<br> `--dir` <dir>                 | Path to a Ghost theme root directory.<br>This option is required if your current working directory<br/>is not a Ghost theme root or Ghost installation root directory.<br/>**Example:** `--dir="path to theme root"` or `-d "path to theme root"` |
 | ```-n```,<br>`--theme-name` <themeName> | Name of the theme folder.<br/>It is required and only takes effect when current working directory <br/> is Ghost installation root directory.<br/>Example:** `--theme-name=xyz` or `-n xyz` |
 | `-h`, `--help`                          | output usage information.                                    |
