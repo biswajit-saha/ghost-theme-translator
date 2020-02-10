@@ -36,7 +36,9 @@ But for easy uses `gtt [options] <command>` is also available and convenient to 
 
 #### gtt
 
- `gtt [option]` 
+```bash
+gtt [option]
+```
 
 | Options           | Description               |
 | ----------------- | ------------------------- |
@@ -45,7 +47,15 @@ But for easy uses `gtt [options] <command>` is also available and convenient to 
 
 #### gtt create
 
-`gtt create [options]` or `gtt c [options]`
+```bash
+gtt create [options]
+```
+
+Or
+
+```bash
+gtt c [options]
+```
 
 | Options                 | Description                                                  |
 | ----------------------- | :----------------------------------------------------------- |
